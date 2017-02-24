@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<API>
+<Result>
+       <OrderID>1234567890</OrderID>
+<UnlockCode></UnlockCode>
+<Message>VERIFYING</Message>
+<Error></Error>
+</Result>
+</API>
