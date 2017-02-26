@@ -95,7 +95,7 @@ p {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: #111111;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
@@ -398,7 +398,7 @@ footer ul li a.active {
   background: linear-gradient(#fdcc52, #fdc539);
 }
 .text-primary {
-  color: #fdcc52;
+  color: #232323;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -414,8 +414,8 @@ footer ul li a.active {
 .btn-outline:active,
 .btn-outline.active {
   color: white;
-  background-color: #fdcc52;
-  border-color: #fdcc52;
+  background-color: #8d34e5;
+  border-color: #8d34e5;
 }
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
