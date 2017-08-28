@@ -76,23 +76,234 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 
-    
-	<section id="download" class="download text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Descubre Como Liberar Tu Celular A Otras Redes</h2>
-		    </div>
-		    <div>
-                <div>
-                    <div>
-                       <div>
-		    </div>
-			
-                
-                <p>Nuestro sistema automatizado es capaz de liberar* tu celular a un sin número de Redes dentro y fuera de la isla</p>
-                   
-                 </div>
+    <div id='collection-component-bd5046bda1c'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'movilcentro.myshopify.com',
+      apiKey: '648ad1b34cd10e9edb02507c5fcf22db',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: 442555212,
+        node: document.getElementById('collection-component-bd5046bda1c'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "variantId": "all",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "BUY NOW"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#6a57b6",
+        "font-family": "Karla, sans-serif",
+        ":hover": {
+          "background-color": "#5f4ea4"
+        },
+        ":focus": {
+          "background-color": "#5f4ea4"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Karla, sans-serif"
+      },
+      "description": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Karla",
+      "Karla",
+      "Karla",
+      "Karla",
+      "Karla",
+      "Karla"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#6a57b6",
+        "font-family": "Karla, sans-serif",
+        ":hover": {
+          "background-color": "#5f4ea4"
+        },
+        ":focus": {
+          "background-color": "#5f4ea4"
+        },
+        "font-weight": "bold"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Karla"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#6a57b6",
+        "font-family": "Karla, sans-serif",
+        ":hover": {
+          "background-color": "#5f4ea4"
+        },
+        ":focus": {
+          "background-color": "#5f4ea4"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Karla, sans-serif"
+      },
+      "description": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-family": "Karla, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Karla",
+      "Karla",
+      "Karla",
+      "Karla",
+      "Karla",
+      "Karla"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Karla, sans-serif",
+        "background-color": "#6a57b6",
+        ":hover": {
+          "background-color": "#5f4ea4"
+        },
+        ":focus": {
+          "background-color": "#5f4ea4"
+        },
+        "font-weight": "bold"
+      }
+    },
+    "googleFonts": [
+      "Karla"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Karla, sans-serif"
+      },
+      "select": {
+        "font-family": "Karla, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Karla",
+      "Karla"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+	
         </div>
 		 <section id="contact" class="contact bg-primary">
         <div class="container">
