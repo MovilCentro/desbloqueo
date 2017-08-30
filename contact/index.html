@@ -103,7 +103,14 @@
         </a>
 
     </header>
-
+ <li>
+                        LIVE CHAT
+                       <div class="fb-messengermessageus" 
+                      messenger_app_id="145566029288387" 
+                      page_id="732439013525337"
+                      color="blue"
+                      size="large" >
+                           </li>
     <!-- Page Content -->
     <div class="container">
 
@@ -115,21 +122,22 @@
             </div>
         </div>
 </section>
-<section id="contact" class="contact bg-primary">
-        <div class="container">
-            <h2></h2>
-            <ul class="list-inline list-social">
-                <li class="social-instagram">
-                    <a href="https://instagram.com/mobilecentropr"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li class="social-facebook">
-                    <a href="https://www.facebook.com/732439013525337"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-twitter">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-            </ul>
-        </div>
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: "145566029288387",
+        xfbml: true,
+        version: "v2.6"
+      });
+    };
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) { return; }
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
     </section>
 
     
